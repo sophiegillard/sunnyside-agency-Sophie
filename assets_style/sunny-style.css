@@ -1,10 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-* {
-  border: solid red 1px;
-}
-
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Barlow", sans-serif;
   background-color: #FFFCF8;
   margin: 0px;
@@ -85,9 +81,137 @@ header img {
   letter-spacing: 0.063rem;
 }
 
+.content-third-el {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.content-third-el h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.75rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.content-third-el .card-content {
+  position: relative;
+  top: 19rem;
+}
 .content-third-el .graphic {
   background-image: url("/assets_pictures/4cerise.png");
+  color: #24554A;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 24rem;
+  justify-content: flex-end;
 }
 .content-third-el .photography {
   background-image: url("/assets_pictures/5mandarine.png");
+  color: #052C3B;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50rem;
+}
+
+.client-testimonials {
+  padding: 4rem 1.5rem 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 78rem;
+}
+.client-testimonials h5 {
+  font-family: "Fraunces 9pt Soft";
+  font-weight: 900;
+  line-height: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: #A7AAAD;
+}
+.client-testimonials .client-photo {
+  justify-self: center;
+}
+.client-testimonials .client-comment {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -0.008rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #5B636D;
+}
+.client-testimonials .client-name {
+  padding-bottom: 0.56rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  letter-spacing: -0.008rem;
+}
+.client-testimonials .client-job {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.563rem;
+  text-align: center;
+  letter-spacing: -0.006rem;
+  color: #A7AAAD;
+}
+
+.end-picture {
+  height: 23.438rem;
+  width: 23.438rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.end-picture img {
+  height: 11.67rem;
+  width: 11.67rem;
+}
+
+footer {
+  background-color: #90D4C6;
+  padding: 4rem 2.06rem 5rem 2.06rem;
+  text-align: center;
+}
+footer .footer-navbar {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0 5.5rem 0;
+}
+footer a {
+  text-decoration: none;
+  color: #24554A;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
+  letter-spacing: -0.008rem;
+}
+footer .footer-social-media {
+  display: flex;
+  flex: row;
+  position: relative;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 10.25rem;
+  left: 20%;
+  right: 20%;
 }/*# sourceMappingURL=sunny-style.css.map */

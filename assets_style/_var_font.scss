@@ -21,4 +21,23 @@ $light-grey-details:#A7AAAD;
     text-align: center;
 }
 
-$base-font-size: 18px;
+$base-font-size: 16px;
+
+// IMAGES
+@mixin background-images-text{
+    height:37.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin card{
+    padding: 4rem 1.5rem 4rem 1.5rem;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}

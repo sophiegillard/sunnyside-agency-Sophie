@@ -1,3 +1,5 @@
+@import "/assets_style/var_font";
+
 @mixin head-title{
     position: absolute;
     height: 98px;
@@ -15,19 +17,13 @@
     text-transform: uppercase;
     }
     
-    @mixin card-title-on-white{
-        color: #24303E;
-        position: absolute;
-        width: 327px;
-        height: 78px;
-        left: 24px;
+@mixin text-white-card($color){
+    position: absolute;
     
-        font-family: 'Fraunces 9pt Soft';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
-        letter-spacing: -0.228571px;
-    
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    /* or 178% */
+    text-align: center;
+    letter-spacing: -0.128571px;
     }

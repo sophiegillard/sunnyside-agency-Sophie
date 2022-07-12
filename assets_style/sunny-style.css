@@ -1,3 +1,27 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+* {
+  border: solid red 1px;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  background-color: #FFFCF8;
+  margin: 0px;
+  width: 375px;
+  height: 5219px;
+}
+
 .container {
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  width: 375px;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
 }/*# sourceMappingURL=sunny-style.css.map */

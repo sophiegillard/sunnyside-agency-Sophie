@@ -1,1 +1,33 @@
-$grey: #24303E;
+
+// COLOURS
+$grey-title-white-card-and-names: #24303E;
+$grey-text-white-card: #808397;
+$grey-text-comment: #5B636D; 
+
+$green-green-card:#24554A;
+$blue-blue-card:#052C3B;
+
+$light-grey-details:#A7AAAD;
+
+// FONTS
+@mixin font-text {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+@mixin font-title {
+    font: "Fraunces", serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+$base-font-size: 18px;
+
+@function trim-unit($value){
+    @return $value / ($value * 0 + 1);
+}
+
+
+@function rem-calc($value){
+    @return $value / trim-unit($base-font-size) * 1rem
+}

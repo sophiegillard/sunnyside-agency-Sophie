@@ -1,8 +1,38 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-@import "_font-style"
+@import "_mixin-style";
+@import "_var_font";
 
+*{
+    border: solid red 1px;
+}
+body{
+    font-size: $base-font-size;
+    font-family: 'Barlow', sans-serif;
+    
+    background-color: #FFFCF8;
+    margin:0px;
 
+    width: 375px;
+    height: 5219px;
+
+}
 
 .container{
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+//HEADER
+
+header{
+   
+    width: 375px;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    h2{
+        @include font-text;
+    }
 }

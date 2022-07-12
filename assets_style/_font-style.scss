@@ -1,0 +1,33 @@
+@mixin head-title{
+    position: absolute;
+    height: 98px;
+    left: 6.4%;
+    right: 6.4%;
+    top: calc(50% - 98px/2 - 76px);
+    
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+    }
+    
+    @mixin card-title-on-white{
+        color: #24303E;
+        position: absolute;
+        width: 327px;
+        height: 78px;
+        left: 24px;
+    
+        font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: -0.228571px;
+    
+    }

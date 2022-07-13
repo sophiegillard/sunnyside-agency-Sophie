@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   background-image: url("/assets_pictures/1orange.png");
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ header img {
   text-align: center;
   font-size: 2rem;
   line-height: 2.438rem;
-  letter-spacing: -0.228571px;
+  letter-spacing: -0.014rem;
 }
 .content .text-card {
   font-family: "Barlow", sans-serif;
@@ -69,7 +69,7 @@ header img {
   padding-top: 2rem;
   padding-bottom: 2rem;
   line-height: 1.875rem;
-  letter-spacing: -0.128571px;
+  letter-spacing: -0.008rem;
 }
 .content h3 {
   font-family: "Fraunces", serif;
@@ -214,4 +214,21 @@ footer .footer-social-media {
   width: 10.25rem;
   left: 20%;
   right: 20%;
+}
+
+@media screen and (min-width: 376px) and (max-width: 1500px) {
+  body {
+    width: 1440px;
+    height: 4174px;
+  }
+  .content section {
+    display: flex;
+    flex-direction: row;
+  }
+  .content .content-first-el {
+    flex-direction: row-reverse;
+  }
+  .content .card {
+    padding: 9.813rem 10.313rem 9.813rem 6.875rem;
+  }
 }/*# sourceMappingURL=sunny-style.css.map */

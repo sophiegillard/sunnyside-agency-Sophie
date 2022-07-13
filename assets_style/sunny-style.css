@@ -23,48 +23,9 @@ header {
   align-items: center;
   justify-content: center;
   /* Style the navigation menu */
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  /* Style navigation menu links */
-  /* Style the hamburger menu */
-  /* Add a grey background color on mouse-over */
-  /* Style the active link (or home/logo) */
-}
-header .topnav {
-  overflow: hidden;
-  background-color: #FFFCF8;
-  position: relative;
-}
-header .topnav #myLinks {
-  display: none;
-}
-header .topnav a {
-  color: #A7AAAD;
-  padding: 1rem 1rem;
-  text-decoration: none;
-  font-size: 1rem;
-  display: block;
-}
-header .topnav a.icon {
-  background-image: url("assets_pictures/menu.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 300px;
-  height: 10%;
-}
-header .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-header .active {
-  background-color: #3b6389;
-  color: white;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3.083rem;
   text-align: center;
   letter-spacing: 0.391rem;
@@ -75,12 +36,71 @@ header h1 {
   width: 80%;
   text-transform: uppercase;
   position: absolute;
-  top: 10.5rem;
+  top: 13.5rem;
 }
-header img {
+header .header-block-logo {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 2rem;
+}
+header .topnav {
+  overflow: hidden;
+  position: relative;
+  width: 84%;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  /* Style navigation menu links */
+  /* Style the hamburger menu */
+  /* Add a grey background color on mouse-over */
+  /* Style the active link (or home/logo) */
+}
+header .topnav #myLinks {
+  display: none;
+  background-color: #FFFCF8;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+header .topnav .link-contact {
+  background-color: #FBD600;
+  color: #24303E;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  width: 50%;
+  border-radius: 50px;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+header .topnav a {
+  color: #A7AAAD;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  justify-self: center;
+}
+header .topnav .icon {
+  height: 7rem;
+  width: auto;
+  background-image: url("/assets_pictures/menuW.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+header .topnav .active {
+  background-color: none;
+  opacity: 0;
+  color: blue;
 }
 
 .content {
@@ -124,19 +144,20 @@ header img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid 2px red;
+  position: relative;
 }
 .content-third-el h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   text-align: center;
   font-size: 1.75rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .content-third-el .card-content {
-  position: relative;
-  top: 19rem;
   text-align: center;
+  border: solid 2px blue;
+  justify-content: first baseline;
 }
 .content-third-el .graphic {
   background-image: url("/assets_pictures/4cerise.png");
@@ -144,8 +165,6 @@ header img {
   height: 37.5rem;
   background-repeat: no-repeat;
   background-position: center;
-  top: 24rem;
-  justify-content: flex-end;
 }
 .content-third-el .photography {
   background-image: url("/assets_pictures/5mandarine.png");
@@ -153,7 +172,6 @@ header img {
   height: 37.5rem;
   background-repeat: no-repeat;
   background-position: center;
-  top: 50rem;
 }
 
 .client-testimonials {
@@ -165,7 +183,9 @@ header img {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  height: 78rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .client-testimonials h5 {
   font-family: "Fraunces 9pt Soft";
@@ -175,9 +195,11 @@ header img {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: #A7AAAD;
+  padding-bottom: 3rem;
 }
 .client-testimonials .client-photo {
   justify-self: center;
+  padding-top: 3rem;
 }
 .client-testimonials .client-comment {
   font-family: "Barlow";
@@ -187,8 +209,8 @@ header img {
   line-height: 2rem;
   text-align: center;
   letter-spacing: -0.008rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #5B636D;
 }
 .client-testimonials .client-name {
@@ -256,16 +278,56 @@ footer .footer-social-media {
   right: 20%;
 }
 
-@media screen and (min-width: 400px) {
-  .container {
-    font-size: 2rem;
+@media screen and (min-width: 450px) {
+  header .topnav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    /* Style navigation menu links */
+    /* Style the hamburger menu */
+    /* Add a grey background color on mouse-over */
+    /* Style the active link (or home/logo) */
+  }
+  header .topnav #myLinks {
+    display: flex;
+    background: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .topnav .link-contact {
+    background-color: white;
+    color: #24303E;
+  }
+  header .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    justify-self: center;
+  }
+  header .topnav .icon {
+    display: none;
+  }
+  header .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  header .topnav .active {
+    display: none;
   }
   .content section {
     display: flex;
     flex-direction: row;
   }
   .content .content-image {
-    flex: 50%;
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -276,13 +338,14 @@ footer .footer-social-media {
   .content .card {
     justify-content: center;
     padding: 15% 10% 15% 10%;
-    flex: 50%;
+    size: 50%;
   }
   .content h2, .content h3, .content .white-card {
     text-align: left;
   }
   .content .graphic, .content .photography {
-    height: 70rem;
+    max-width: 50%;
+    min-width: 50%;
     background-size: cover;
   }
   .content .card-content {
@@ -293,7 +356,9 @@ footer .footer-social-media {
     flex-direction: row;
   }
   .client-testimonials .client {
-    flex: 33%;
+    flex: 20%;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .end-picture {
     flex-direction: row;

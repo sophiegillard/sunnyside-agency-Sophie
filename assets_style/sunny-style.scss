@@ -33,55 +33,9 @@ header{
     align-items: center;
     justify-content: center;
 
-    /* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #FFFCF8;
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: $light-grey-details;
-    padding: 1rem 1rem;
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background-image: url("assets_pictures/menu.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width:300px;
-    height:10%;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #3b6389;
-    color: white;
-  }
-    
 
     h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 3.083rem;
         text-align: center;
         letter-spacing: 0.391rem;
@@ -91,14 +45,84 @@ header{
         text-transform: uppercase;
 
         position: absolute;
-        top: 10.5rem;
+        top: 13.5rem;
     }
 
-    img{
+    .header-block-logo{
         position: absolute;
-        top: 1rem;
-        left:1rem;
+        top: 2rem;
+        left:2rem;
     }
+//NAVBAR
+      /* Style the navigation menu */
+      .topnav {
+        overflow: hidden;
+        position: relative;
+        width: 84%;
+        position: absolute;
+        top: 2rem;
+        right:2rem;
+      
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      #myLinks {
+        display: none;
+        background-color: #FFFCF8;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        text-align: center;
+        
+      }
+        .link-contact{
+          background-color:#FBD600;
+          color:#24303E;
+          @include font-title;
+          width:50%;
+          border-radius: 50px;
+          padding-right:20%;
+          padding-left:20%;
+
+        }
+
+      /* Style navigation menu links */
+       a {
+        color: $light-grey-details;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        
+        justify-self: center;
+       }
+
+      /* Style the hamburger menu */
+              .icon {
+            height:7rem;
+            width: auto;
+            background-image: url("/assets_pictures/menuW.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+    
+      /* Add a grey background color on mouse-over */
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Style the active link (or home/logo) */
+      .active {
+        background-color: none;
+        opacity: 0;
+        color: blue;
+      }
+    }
+//END NAVBAR
 
 }
 
@@ -141,40 +165,41 @@ header{
 .content-third-el{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
+    border: solid 2px red;
+   
 
     h4{
         @include font-title;
         font-size:1.75rem;
-        padding-top: 2rem;
-       padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 
     .card-content{
-        position: relative;
-        top: 19rem;
         text-align: center;
+        border: solid 2px blue;
+        justify-content:first baseline;
     }
 
     .graphic{
         background-image: url("/assets_pictures/4cerise.png");
         color:$green-green-card;
         @include background-images-text;
-        top:24rem;
-        justify-content: flex-end;
+       
+       
     }
     .photography{
         background-image: url("/assets_pictures/5mandarine.png");
         color:$blue-blue-card;
         @include background-images-text;
-        top:50rem;
+
     }
 }
 
 .client-testimonials{
     @include card;
-    height: 78rem;
+    height: fit-content;
 
     h5{
     font-family: 'Fraunces 9pt Soft';
@@ -184,10 +209,12 @@ header{
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     color: $light-grey-details;
+    padding-bottom: 3rem;
     }
     
     .client-photo{
         justify-self: center;
+        padding-top:3rem;
     }
 
     .client-comment{
@@ -198,8 +225,8 @@ header{
         line-height: 2rem;
         text-align: center;
         letter-spacing: -0.008rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         color: $grey-text-comment
     }
 
@@ -276,18 +303,73 @@ footer{
 
 }
 
-@media screen and (min-width:400px) {
-    .container{
-        font-size: 2rem;
+@media screen and (min-width:450px) {
+
+
+    header{
+      .topnav {
+        display: flex;
+        justify-content: flex-end;
+
+        position: absolute;
+        top: 2rem;
+        right:2rem;
+      
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      #myLinks {
+        display:flex;
+        
+        background:none;
+       
+        width: fit-content;
+        
+      }
+        .link-contact{
+          background-color:white;
+          color:$grey-title-white-card-and-names;
+        }
+
+      /* Style navigation menu links */
+       a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        
+        justify-self: center;
+       }
+
+      /* Style the hamburger menu */
+              .icon {
+            display: none;
+          }
+    
+      /* Add a grey background color on mouse-over */
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Style the active link (or home/logo) */
+      .active {
+       display: none;
+      }
+    }
     }
 
     .content{
        section{
         display: flex;
         flex-direction: row;
+        
        }
        .content-image{
-        flex:50%;
+        max-width: 50%;
+        min-width: 50%;
+        height:auto;
+        
         width: fit-content;
        }
        .content-first-el{
@@ -297,15 +379,17 @@ footer{
     .card{
         justify-content: center;
         padding: 15% 10% 15% 10% ;
-        flex:50%;
+       
+        size:50%;
     }
     h2, h3, .white-card{
         text-align: left;
     }
 
     .graphic, .photography{
-        height: 70rem;
-        background-size:cover;
+      max-width: 50%;
+      min-width: 50%;
+      background-size:cover;
     }
     .card-content{
         width: 21rem;
@@ -320,7 +404,9 @@ footer{
         }
 
         .client{
-            flex:33%;
+            flex:20%;
+            padding-left: 4rem;
+            padding-right: 4rem;
         }
     }
 

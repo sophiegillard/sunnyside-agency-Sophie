@@ -4,8 +4,6 @@ body {
   font-family: "Barlow", sans-serif;
   background-color: #FFFCF8;
   margin: 0px;
-  width: 375px;
-  height: 5219px;
 }
 
 .container {
@@ -84,7 +82,8 @@ header img {
 .content-third-el {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 .content-third-el h4 {
   font-family: "Fraunces", serif;
@@ -97,6 +96,7 @@ header img {
 .content-third-el .card-content {
   position: relative;
   top: 19rem;
+  text-align: center;
 }
 .content-third-el .graphic {
   background-image: url("/assets_pictures/4cerise.png");
@@ -216,19 +216,49 @@ footer .footer-social-media {
   right: 20%;
 }
 
-@media screen and (min-width: 376px) and (max-width: 1500px) {
-  body {
-    width: 1440px;
-    height: 4174px;
+@media screen and (min-width: 376px) {
+  .container {
+    font-size: 2rem;
   }
   .content section {
     display: flex;
     flex-direction: row;
   }
+  .content .content-image {
+    flex: 50%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .content .content-first-el {
     flex-direction: row-reverse;
   }
   .content .card {
-    padding: 9.813rem 10.313rem 9.813rem 6.875rem;
+    justify-content: center;
+    padding: 15% 10% 15% 10%;
+    flex: 50%;
+  }
+  .content h2, .content h3, .content .white-card {
+    text-align: left;
+  }
+  .content .graphic, .content .photography {
+    height: 70rem;
+    background-size: cover;
+  }
+  .content .card-content {
+    width: 21rem;
+  }
+  .client-testimonials .client-testimonials-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .client-testimonials .client {
+    flex: 33%;
+  }
+  .end-picture {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 25%;
+    size: auto;
   }
 }/*# sourceMappingURL=sunny-style.css.map */

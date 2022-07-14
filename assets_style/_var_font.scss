@@ -5,6 +5,7 @@ $grey-text-white-card: #808397;
 $grey-text-comment: #5B636D; 
 
 $green-green-card:#24554A;
+$light-green: #458D7E;
 $blue-blue-card:#052C3B;
 
 $light-grey-details:#A7AAAD;
@@ -28,6 +29,17 @@ $underline-pink_fade:#fe786690;
     font-weight: 900;
     text-align: center;
 }
+
+@mixin text-white-card($color){
+    position: absolute;
+    
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    /* or 178% */
+    text-align: center;
+    letter-spacing: -0.128571px;
+    }
 
 $base-font-size: 16px;
 

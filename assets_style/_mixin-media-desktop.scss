@@ -1,0 +1,130 @@
+@import "var_font";
+
+@mixin querryDesktop{
+
+    header{
+      .topnav {
+        display: flex;
+        justify-content: flex-end;
+
+        position: absolute;
+        top:-1rem;
+        right:5em;
+      
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      #myLinks {
+        display:flex;
+        
+        background:none;
+       
+        width: fit-content;
+        
+      }
+        .link-contact{
+          background-color:white;
+          color:$grey-title-white-card-and-names;
+        }
+
+      /* Style navigation menu links */
+       a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        
+        justify-self: center;
+       }
+
+      /* Style the hamburger menu */
+              .icon {
+            display: none;
+          }
+    
+      /* Add a grey background color on mouse-over */
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Style the active link (or home/logo) */
+      .active {
+       display: none;
+      }
+    }
+    }
+
+    .content{
+       section{
+        display: flex;
+        flex-direction: row;
+        
+       }
+       .content-image{
+        max-width: 50%;
+        min-width: 50%;
+        height:auto;
+        
+        width: fit-content;
+       }
+       .content-first-el{
+        flex-direction: row-reverse;
+       }
+
+    .card{
+        justify-content: center;
+        padding: 15% 10% 15% 10% ;
+       
+        size:50%;
+    }
+    h2, h3, .white-card{
+        text-align: left;
+    }
+
+    .graphic, .photography{
+      max-width: 50%;
+      min-width: 50%;
+      background-size:cover;
+    }
+    .card-content{
+        width: 21rem;
+        padding: 50% 10% 20% 10%; 
+    }
+    }
+    
+    .client-testimonials{
+
+        .client-testimonials-box{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .client{
+            flex:20%;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+
+    .end-picture{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex: 25%;
+        size: auto;
+
+
+    display: flex;
+    width:100%;
+    height:auto;
+    flex:1 1 1 1;
+     img{
+        width: 100%;
+        height:auto;
+    }
+    }
+
+    footer{
+        padding: 5% 40% 5% 40%;
+    }
+}

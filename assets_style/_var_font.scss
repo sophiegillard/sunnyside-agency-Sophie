@@ -9,6 +9,12 @@ $blue-blue-card:#052C3B;
 
 $light-grey-details:#A7AAAD;
 
+$underline_yellow:#fad400;
+$underline-pink:#FE7766;
+
+$underline_yellow_fade:#fad4007a;
+$underline-pink_fade:#fe786690;
+
 
 
 // FONTS
@@ -48,5 +54,32 @@ $base-font-size: 16px;
 
 
 $base-font-size-pc: 60px;
+
+}
+
+// Underline
+@mixin learnMoreMix{
+        text-decoration: none;
+        @include font-title;
+        color:$grey-title-white-card-and-names;
+        text-transform: uppercase;
+        font-size: 0.938rem;
+        line-height: 1.563rem;
+        letter-spacing: 0.063rem;
+
+        &:hover{
+            text-decoration: none;
+    }
+   
+}
+@mixin learnMore_underline ($color, $colorhover){
+    background-image: linear-gradient(to bottom, transparent 50%, $color 50%);
+    border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 100% 0.9em;
+  background-position: 0 96%;
+    &:hover{
+        background-image: linear-gradient(to bottom, transparent 50%, $colorhover 50%);
+    }
 
 }

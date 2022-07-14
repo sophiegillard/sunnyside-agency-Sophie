@@ -3,16 +3,16 @@
 @mixin querryDesktop{
 
     header{
-      .topnav {
+      .header-block-topnav{
         display: flex;
         justify-content: flex-end;
         top:-2rem;
         
       /* Hide the links inside the navigation menu (except for logo/home) */
-      #myLinks {
-        display:flex;
-        
-        background:none;
+        #myLinks {
+          display:flex;
+          
+          background:none;
       }
         .link-contact{
           background-color:white;

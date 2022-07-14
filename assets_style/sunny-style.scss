@@ -4,13 +4,10 @@
 
 
 body{
-    font-size: $base-font-size;
     font-family: 'Barlow', sans-serif;
-    
     background-color: #FFFCF8;
     margin:0px;
 
-   
 }
 
 .container{
@@ -20,7 +17,7 @@ body{
 }
 //HEADER
 
-header{
+.header-block{
     max-width: 100%;
     height: 100vh;
 
@@ -34,7 +31,7 @@ header{
     justify-content: center;
 
 
-    h1{
+    .header-block-title{
         font-size: 2rem;
         line-height: 3.083rem;
         text-align: center;
@@ -55,7 +52,7 @@ header{
     }
 //NAVBAR
       /* Style the navigation menu */
-      .topnav {
+      .header-block-topnav {
         overflow: hidden;
         position: relative;
         width: 50vw;

@@ -1,6 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 body {
-  font-size: 16px;
   font-family: "Barlow", sans-serif;
   background-color: #FFFCF8;
   margin: 0px;
@@ -12,7 +11,7 @@ body {
   position: relative;
 }
 
-header {
+.header-block {
   max-width: 100%;
   height: 100vh;
   background-image: url("/assets_pictures/1orange.png");
@@ -24,7 +23,7 @@ header {
   justify-content: center;
   /* Style the navigation menu */
 }
-header h1 {
+.header-block .header-block-title {
   font-size: 2rem;
   line-height: 3.083rem;
   text-align: center;
@@ -38,12 +37,12 @@ header h1 {
   position: absolute;
   top: 13.5rem;
 }
-header .header-block-logo {
+.header-block .header-block-logo {
   position: absolute;
   top: 2rem;
   left: 2rem;
 }
-header .topnav {
+.header-block .header-block-topnav {
   overflow: hidden;
   position: relative;
   width: 50vw;
@@ -56,14 +55,14 @@ header .topnav {
   /* Add a grey background color on mouse-over */
   /* Style the active link (or home/logo) */
 }
-header .topnav #myLinks {
+.header-block .header-block-topnav #myLinks {
   display: none;
   background-color: #FFFCF8;
   margin-top: 3rem;
   margin-bottom: 3rem;
   text-align: center;
 }
-header .topnav .link-contact {
+.header-block .header-block-topnav .link-contact {
   background-color: #FBD600;
   color: #24303E;
   font-family: "Fraunces", serif;
@@ -72,7 +71,7 @@ header .topnav .link-contact {
   width: 50%;
   border-radius: 50px;
 }
-header .topnav a {
+.header-block .header-block-topnav a {
   color: #A7AAAD;
   padding: 14px 16px;
   text-decoration: none;
@@ -80,7 +79,7 @@ header .topnav a {
   display: block;
   justify-self: center;
 }
-header .topnav .icon {
+.header-block .header-block-topnav .icon {
   height: 7rem;
   width: auto;
   background-image: url("/assets_pictures/menuW.png");
@@ -91,10 +90,10 @@ header .topnav .icon {
   right: 0;
   top: 0;
 }
-header .topnav a:hover {
+.header-block .header-block-topnav a:hover {
   font-weight: bolder;
 }
-header .topnav .active {
+.header-block .header-block-topnav .active {
   background-color: none;
   opacity: 0;
   color: blue;
@@ -301,7 +300,7 @@ footer .footer-social-media {
 }
 
 @media screen and (min-width: 450px) {
-  header .topnav {
+  header .header-block-topnav {
     display: flex;
     justify-content: flex-end;
     top: -2rem;
@@ -311,21 +310,21 @@ footer .footer-social-media {
     /* Add a grey background color on mouse-over */
     /* Style the active link (or home/logo) */
   }
-  header .topnav #myLinks {
+  header .header-block-topnav #myLinks {
     display: flex;
     background: none;
   }
-  header .topnav .link-contact {
+  header .header-block-topnav .link-contact {
     background-color: white;
     color: #24303E;
   }
-  header .topnav a {
+  header .header-block-topnav a {
     color: white;
   }
-  header .topnav .icon {
+  header .header-block-topnav .icon {
     display: none;
   }
-  header .topnav .link-contact:hover {
+  header .header-block-topnav .link-contact:hover {
     background-color: rgba(255, 255, 255, 0.585);
     color: white;
     font-weight: 900;

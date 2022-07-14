@@ -58,7 +58,7 @@ header{
       .topnav {
         overflow: hidden;
         position: relative;
-        width: 84%;
+        width: 50vw;
         position: absolute;
         top: 2rem;
         right:2rem;
@@ -80,8 +80,6 @@ header{
           @include font-title;
           width:50%;
           border-radius: 50px;
-          padding-right:20%;
-          padding-left:20%;
 
         }
 
@@ -111,8 +109,7 @@ header{
     
       /* Add a grey background color on mouse-over */
       a:hover {
-        background-color: #ddd;
-        color: black;
+        font-weight: bolder;
       }
 
       /* Style the active link (or home/logo) */
@@ -155,10 +152,10 @@ header{
     .learnMore{
         @include font-title;
         @include learnMoreMix;
-        @include learnMore_underline($underline-pink, $underline-pink_fade);
+        @include learnMore_underline($underline-pink_fade, $underline-pink);
     }
     .learnMore1{
-        @include learnMore_underline($underline-yellow, $underline_yellow_fade);
+        @include learnMore_underline($underline-yellow_fade, $underline_yellow);
     }
     
 
@@ -278,6 +275,7 @@ footer{
         display: flex;
         justify-content: space-between;
         width:300px;
+        padding-top: 1.5rem;
         padding-bottom: 2.5rem;
     }
 

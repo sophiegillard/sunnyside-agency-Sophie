@@ -300,7 +300,8 @@ footer .footer-social-media {
 }
 
 @media screen and (min-width: 450px) {
-  header .header-block-topnav {
+  /* HEADER */
+  .header-block .header-block-topnav {
     display: flex;
     justify-content: flex-end;
     top: -2rem;
@@ -308,27 +309,27 @@ footer .footer-social-media {
     /* Style navigation menu links */
     /* Style the hamburger menu */
     /* Add a grey background color on mouse-over */
-    /* Style the active link (or home/logo) */
   }
-  header .header-block-topnav #myLinks {
+  .header-block .header-block-topnav #myLinks {
     display: flex;
     background: none;
   }
-  header .header-block-topnav .link-contact {
+  .header-block .header-block-topnav .link-contact {
     background-color: white;
     color: #24303E;
   }
-  header .header-block-topnav a {
+  .header-block .header-block-topnav a {
     color: white;
   }
-  header .header-block-topnav .icon {
+  .header-block .header-block-topnav .icon {
     display: none;
   }
-  header .header-block-topnav .link-contact:hover {
+  .header-block .header-block-topnav .link-contact:hover {
     background-color: rgba(255, 255, 255, 0.585);
     color: white;
     font-weight: 900;
   }
+  /*CONTENU*/
   .content section {
     display: flex;
     flex-direction: row;
@@ -361,6 +362,7 @@ footer .footer-social-media {
     width: 21rem;
     padding: 50% 10% 20% 10%;
   }
+  /*TESTIMONIALS*/
   .client-testimonials .client-testimonials-box {
     display: flex;
     flex-direction: row;
@@ -370,6 +372,7 @@ footer .footer-social-media {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+  /*Photos de fin*/
   .end-picture {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -384,6 +387,7 @@ footer .footer-social-media {
     width: 100%;
     height: auto;
   }
+  /*FOOTER*/
   footer {
     padding: 5% 40% 5% 40%;
   }

@@ -2,7 +2,8 @@
 
 @mixin querryDesktop{
 
-    header{
+  /* HEADER */
+    .header-block{
       .header-block-topnav{
         display: flex;
         justify-content: flex-end;
@@ -11,41 +12,39 @@
       /* Hide the links inside the navigation menu (except for logo/home) */
         #myLinks {
           display:flex;
-          
           background:none;
-      }
+        }
         .link-contact{
           background-color:white;
           color:$grey-title-white-card-and-names;
         }
 
-      /* Style navigation menu links */
-       a {
-        color: white;
-       }
+        /* Style navigation menu links */
+        a {
+          color: white;
+        }
 
-      /* Style the hamburger menu */
-              .icon {
-            display: none;
-          }
-    
-      /* Add a grey background color on mouse-over */
-      .link-contact:hover {
-        background-color: $white_fade;
-        color:white;
-        font-weight: 900;
+        /* Style the hamburger menu */
+        .icon {
+          display: none;
+        }
+      
+        /* Add a grey background color on mouse-over */
+        .link-contact:hover {
+          background-color: $white_fade;
+          color:white;
+          font-weight: 900;
+        }
       }
-
-      /* Style the active link (or home/logo) */
-    }
     }
 
+  /*CONTENU*/
     .content{
-       section{
+      section{
         display: flex;
         flex-direction: row;
-        
-       }
+      }
+
        .content-image{
         max-width: 50%;
         min-width: 50%;
@@ -57,58 +56,63 @@
         flex-direction: row-reverse;
        }
 
-    .card{
-        justify-content: center;
-        padding: 15% 10% 15% 10% ;
-       
-        size:50%;
-    }
-    h2, h3, .white-card{
-        text-align: left;
-    }
+      .card{
+          justify-content: center;
+          padding: 15% 10% 15% 10% ;
+        
+          size:50%;
+      }
 
-    .graphic, .photography{
-      max-width: 50%;
-      min-width: 50%;
-      background-size:cover;
-    }
-    .card-content{
-        width: 21rem;
-        padding: 50% 10% 20% 10%; 
-    }
-    }
-    
+      h2, h3, .white-card{
+          text-align: left;
+      }
+
+      .graphic, .photography{
+        max-width: 50%;
+        min-width: 50%;
+        background-size:cover;
+      }
+      
+      .card-content{
+          width: 21rem;
+          padding: 50% 10% 20% 10%; 
+      }
+   }
+
+    /*TESTIMONIALS*/
     .client-testimonials{
 
-        .client-testimonials-box{
-            display: flex;
-            flex-direction: row;
-        }
-
-        .client{
-            flex:20%;
-            padding-left: 4rem;
-            padding-right: 4rem;
-        }
-    }
-
-    .end-picture{
+      .client-testimonials-box{
+        display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        flex: 25%;
-        size: auto;
+      }
 
-
-    display: flex;
-    width:100%;
-    height:auto;
-    flex:1 1 1 1;
-     img{
-        width: 100%;
-        height:auto;
-    }
+      .client{
+        flex:20%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
     }
 
+    /*Photos de fin*/
+    .end-picture{
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex: 25%;
+      size: auto;
+
+      display: flex;
+      width:100%;
+      height:auto;
+      flex:1 1 1 1;
+
+        img{
+            width: 100%;
+            height:auto;
+        }
+    }
+
+    /*FOOTER*/
     footer{
         padding: 5% 40% 5% 40%;
     }
